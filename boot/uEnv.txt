@@ -1,0 +1,2 @@
+bootargs=console=ttyO0,115200n8 mem=512M root=/dev/mmcblk0p2 rw rootfstype=ext3 rootwait rootdelay=1 mpurate=720 init=/init verify=n psplash=false 
+uenvcmd=mmc rescan ; fatload mmc 0 ${kloadaddr} uImage ; bootm ${kloadaddr}

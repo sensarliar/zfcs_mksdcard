@@ -1,0 +1,3 @@
+bootargs=console=ttyO1,115200n8 mem=512M root=/dev/mmcblk0p2 rw rootfstype=ext3 rootwait rootdelay=1 init=/init ip=off
+bootcmd=mmc rescan ; fatload mmc 0 81000000 uImage ; bootm 81000000
+uenvcmd=boot
