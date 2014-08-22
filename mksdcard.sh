@@ -107,7 +107,7 @@ execute "cp boot/MLO /tmp/sdk/$$/MLO"
 execute "cp boot/u-boot.img /tmp/sdk/$$/u-boot.img"
 execute "cp boot/uImage /tmp/sdk/$$/uImage"
 execute "cp boot/uEnv.txt /tmp/sdk/$$/uEnv.txt"
-execute "cp boot/pointercal /tmp/sdk/$$/pointercal"
+
 
 sync
 echo "unmounting ${device}1"
@@ -116,8 +116,7 @@ execute "umount /tmp/sdk/$$"
 execute "mkdir -p /tmp/sdk/$$"
 execute "mount ${device}2 /tmp/sdk/$$"
 echo "Extracting filesystem on ${device}2 ..."
-rootfs=`ls -1 filesystem/*rootfs*.tar.gz`
-tar zxvf $rootfs -C /tmp/sdk/$$
+execute "cp /home/gaoming/ti-sdk-am335x-evm-06.00.00.00/filesystem/tisdk-rootfs-image-am335x-evm/* /tmp/sdk/$$"
 
 sync
 echo "unmounting ${device}2"
