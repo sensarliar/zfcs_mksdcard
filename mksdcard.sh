@@ -116,7 +116,9 @@ execute "umount /tmp/sdk/$$"
 execute "mkdir -p /tmp/sdk/$$"
 execute "mount ${device}2 /tmp/sdk/$$"
 echo "Extracting filesystem on ${device}2 ..."
-execute "cp /home/gaoming/ti-sdk-am335x-evm-06.00.00.00/filesystem/tisdk-rootfs-image-am335x-evm/* /tmp/sdk/$$"
+#execute "cp filesystem/* /tmp/sdk/$$ -a"
+#execute "cp ../../.././ti-sdk-am335x-evm-06.00.00.00/filesystem/tisdk-rootfs-image-am335x-evm/* /tmp/sdk/$$ -R"
+execute "cp ../../.././ti-sdk-am335x-evm-06.00.00.00/filesystem/arago-base-tisdk-image-am335x-evm/* /tmp/sdk/$$ -R"
 
 sync
 echo "unmounting ${device}2"
