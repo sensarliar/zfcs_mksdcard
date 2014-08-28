@@ -81,7 +81,8 @@ total_size=`fdisk -l $device | grep Disk | awk '{print $5}'`
 total_cyln=`echo $total_size/255/63/512 | bc`
 
 # default number of cylinder for first parition
-pc1=5
+#pc1=5
+pc1=10
 
 {
 echo ,$pc1,0x0C,*
