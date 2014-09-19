@@ -1,0 +1,56 @@
+useful things:
+
+1, how to install qt development tools:
+http://processors.wiki.ti.com/index.php/Sitara_Linux_Training:_Hands_on_with_QT
+
+2,how to install TI-sdk, and develop tool-chains:
+http://www.ti.com/tool/LINUXEZSDK-SITARA
+
+ti-sdk-am335x-evm-06.00.00.00-Linux-x86-Install.bin 	
+
+文件也可以在 台式电脑的/home/gaoming/beagle/ti-sdk-evm/ 中找到。
+
+
+3,开发环境所需要的路径，文档，ppt；
+http://processors.wiki.ti.com/index.php/Sitara_Linux_Training:_Linux_Host_Configuration
+http://processors.wiki.ti.com/index.php/Sitara_Linux_SDK_Training
+http://processors.wiki.ti.com/index.php/Sitara_Linux_Software_Developer%E2%80%99s_Guide
+
+
+4,  qt desinger 无法显示；
+
+
+0:~$ '/media/gaoming/58c2dd17-7582-40a7-a68d-7eea135a0e37/gaoming/Downloads/qt-creator-linux-x86-opensource-2.7.1.bin' 
+Warning: Deprecated element 'Pages'.
+
+Warning: Designer: Attempt to add child that is not of class QWizardPage to QWizard.
+
+Warning: Designer: Attempt to add child that is not of class QWizardPage to QWizard.
+
+gaoming@gaoming-ThinkPad-T410:~$ 
+gaoming@gaoming-ThinkPad-T410:~$ 
+gaoming@gaoming-ThinkPad-T410:~$ 
+gaoming@gaoming-ThinkPad-T410:~$ cd ftp/
+gaoming@gaoming-ThinkPad-T410:~/ftp$ ls
+OEM628硬件结构及针脚定义.pdf  om-20000129(Firmware).pdf  test_ld.txt  test_ld.txt~  tt  uimage_bak
+gaoming@gaoming-ThinkPad-T410:~/ftp$ . '/home/gaoming/ti-sdk-am335x-evm-06.00.00.00/linux-devkit/environment-setup' 
+[linux-devkit]:~/ftp> '/home/gaoming/qt/qtcreator-2.7.1/bin/qtcreator' 
+Device is no longer known, removing from kit "AM335X_beagle".
+Device is no longer known, removing from kit "AM335X_beagle".
+WARNING: bool Phonon::FactoryPrivate::createBackend() phonon backend plugin could not be loaded 
+WARNING: bool Phonon::FactoryPrivate::createBackend() phonon backend plugin could not be loaded 
+WARNING: bool Phonon::FactoryPrivate::createBackend() phonon backend plugin could not be loaded 
+WARNING: bool Phonon::FactoryPrivate::createBackend() phonon backend plugin could not be loaded 
+WARNING: bool Phonon::FactoryPrivate::createBackend() phonon backend plugin could not be loaded 
+WARNING: Phonon::createPath: Cannot connect  Phonon::MediaObject ( no objectName ) to  Phonon::AudioOutput ( no objectName ). 
+WARNING: bool Phonon::FactoryPrivate::createBackend() phonon backend plugin could not be loaded 
+WARNING: Phonon::createPath: Cannot connect  Phonon::MediaObject ( no objectName ) to  Phonon::VideoWidget ( no objectName ). 
+Qt has caught an exception thrown from an event handler. Throwing
+exceptions from an event handler is not supported in Qt. You must
+reimplement QApplication::notify() and catch all exceptions there.
+
+terminate called after throwing an instance of 'std::bad_alloc'
+
+
+
+
