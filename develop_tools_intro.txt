@@ -53,4 +53,12 @@ terminate called after throwing an instance of 'std::bad_alloc'
 
 
 
+5,加入gcc path
+
+gps_test工程qt的路径
+'/home/gaoming/qt_code/qtopia4_8/gps_test/gps_test1/gps_test' 
+
+
+gcc编译器：
+/home/gaoming/ti-sdk-am335x-evm-06.00.00.00/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-as
 
